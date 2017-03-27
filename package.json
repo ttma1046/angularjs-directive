@@ -1,0 +1,19 @@
+{
+  "name": "angularjs-directives",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "preprotractor": "webdriver-manager update",
+    "webdriver": "webdriver-manager start",
+    "protractor": "protractor",
+    "serve": "live-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.0",
+    "protractor": "^5.1.1"
+  }
+}

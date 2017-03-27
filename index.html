@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Example - example-directive-bind-production</title>
+    <script src="https://code.angularjs.org/snapshot/angular.min.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body ng-app="docsBindExample">
+    <div ng-controller="Controller" id="test">
+        Hello Controller
+        <input ng-model='name'>
+        <hr/>
+        <span ng-bind="name">test</span>
+        <br/>
+        <span ng:bind="name"></span>
+        <br/>
+        <span ng_bind="name"></span>
+        <br/>
+        <span data-ng-bind="name"></span>
+        <br/>
+        <span x-ng-bind="name"></span>
+        <br/>
+        <div my-customer></div>
+        <my-customer></my-customer>
+        <br />
+        <div my-customer-template-url>nothing</div>
+        <my-customer-template-url></my-customer-template-url>
+        <div my-customer-template-url-func type="name"></div>
+        <div my-customer-template-url-func type="address"></div>
+    </div>
+    <br />
+    <div ng-controller="IgorController">
+        Hello IgorController
+        <div my-customer-template-url>nothing</div>
+        <my-customer-template-url></my-customer-template-url>
+    </div>
+    <div ng-controller="Ctrl" id="test2">
+        <my-dir></my-dir>
+        <span my-dir="exp"></span>
+        <!-- directive: my-dir exp -->
+        <span class="my-dir: exp;"></span>
+    </div>
+</body>
+
+</html>
+<!-- 
+Copyright 2017 Google Inc. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+-->

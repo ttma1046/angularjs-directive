@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Example - example-directive-bind-production - Isolate Scope Directive</title>
+    <script src="https://code.angularjs.org/snapshot/angular.min.js"></script>
+    <script src="docsisofn.js"></script>
+</head>
+
+<body ng-app="docsIsoFnBindExample">
+    <div ng-controller="Controller">
+        {{message}}
+        <my-dialog ng-hide="dialogIsHidden" on-close="hideDialog(message)">
+            Check out the contents, {{name}}!
+        </my-dialog>
+    </div>
+</body>
+
+</html>

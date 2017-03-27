@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Example - example-directive-bind-production - Isolate Scope Directive</title>
+    <script src="https://code.angularjs.org/snapshot/angular.min.js"></script>
+    <script src="docstime.js"></script>
+</head>
+
+<body ng-app="docsTimeDirective">
+    <div ng-controller="Controller">
+        Date format:
+        <input ng-model="format">
+        <hr/> Current time is: <span my-current-time="format"></span>
+    </div>
+</body>
+
+</html>
